@@ -3,5 +3,6 @@ applications:
 - name: default-app-go
   memory: 64M
   buildpack: go_buildpack
+  command: cf-default-app-go
   env:
     GOPACKAGENAME: github.com/swisscom/cf-default-app-go
