@@ -1,1 +1,1 @@
-web: cf-default-app-go
+web: ./cf-default-app-go
