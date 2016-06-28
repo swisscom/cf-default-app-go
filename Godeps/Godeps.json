@@ -1,0 +1,5 @@
+{
+  "ImportPath": "cf-default-app-go",
+  "GoVersion": "go1.5",
+	"Deps": []
+}
