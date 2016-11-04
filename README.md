@@ -5,7 +5,7 @@ The default Go app that will be pushed into the Swisscom Application cloud if no
 ## Run locally
 
 1. Install [Go](https://golang.org/doc/install)
-1. Run `go run server.go`
+1. Run `go run main.go`
 
 ## Run in the cloud
 
