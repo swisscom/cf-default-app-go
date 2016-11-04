@@ -15,12 +15,11 @@ The default Go app that will be pushed into the Swisscom Application cloud if no
 
 ## Create ZIP for Go
 
-1. Run `zip -r go_app.zip Godeps public templates Procfile server.go`
+1. Run `zip -r go_app.zip public templates glide.yaml main.go`
 
 ## Create ZIP for Binary
 
 1. Install [Go](https://golang.org/doc/install)
 1. Change texts in `templates/index.html`
-1. Change Procfile to `web: ./cf-default-app-go`
 1. Run `GOARCH=amd64 GOOS=linux go build .`
 1. Run `zip -r binary_app.zip public templates cf-default-app-go Procfile`
