@@ -39,16 +39,15 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 		r.URL.Query(),
 	}
 
-	lp := path.Join("templates", "layout.html.tmpl")
 	ip := path.Join("templates", "index.html.tmpl")
 
-	t, err := template.ParseFiles(lp, ip)
+	t, err := template.ParseFiles(ip)
 	if err != nil {
 		log.Println("error parsing template files:", err)
 		return
 	}
 
-	err = t.ExecuteTemplate(w, "layout", p)
+	err = t.ExecuteTemplate(w, "index", p)
 	if err != nil {
 		log.Println("error executing template:", err)
 		return

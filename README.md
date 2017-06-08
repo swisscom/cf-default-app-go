@@ -22,5 +22,5 @@ The default Go app that will be pushed into the Swisscom Application cloud if no
 
 1. Install [Go](https://golang.org/doc/install)
 1. Change texts in `templates/index.html`
-1. Run `GOARCH=amd64 GOOS=linux go build .`
+1. Run `GOOS=linux GOARCH=amd64 go build`
 1. Run `zip -r binary_app.zip public templates cf-default-app-go Procfile`

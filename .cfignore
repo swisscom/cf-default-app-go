@@ -2,6 +2,6 @@
 
 !public/
 !templates/
-!/cf-default-app-go
 !glide.lock
 !glide.yaml
+!main.go
