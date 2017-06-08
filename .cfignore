@@ -1,5 +1,7 @@
-binary_app.zip
-cf-default-app-go
-go_app.zip
-Procfile
-README.md
+*
+
+!public/
+!templates/
+!/cf-default-app-go
+!glide.lock
+!glide.yaml
