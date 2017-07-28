@@ -1,6 +1,6 @@
 # CF Default App Go
 
-The default Go app that will be pushed into the Swisscom Application cloud if no source code is provided.
+The default Go app that will be pushed into the Swisscom Application Cloud if no source code is provided.
 
 ## Run locally
 
