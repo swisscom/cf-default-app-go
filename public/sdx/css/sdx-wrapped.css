@@ -1,237 +1,96 @@
 @charset "UTF-8";
 /*!
-* SDX Library v1.3.1
+* SDX Library v1.3.2
 */
-/*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
-/* Document
+.sdx-container {
+  /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
+  /* Document
    ========================================================================== */
-/**
+  /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
  * 3. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-html {
-  font-family: sans-serif;
-  /* 1 */
-  line-height: 1.15;
-  /* 2 */
-  -ms-text-size-adjust: 100%;
-  /* 3 */
-  -webkit-text-size-adjust: 100%;
-  /* 3 */
-}
-
-/* Sections
+  /* Sections
    ========================================================================== */
-/**
+  /**
  * Remove the margin in all browsers (opinionated).
  */
-body {
-  margin: 0;
-}
-
-/**
+  /**
  * Add the correct display in IE 9-.
  */
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
+  /* Grouping content
    ========================================================================== */
-/**
+  /**
  * Add the correct display in IE 9-.
  */
-figcaption,
-figure {
-  display: block;
-}
-
-/**
+  /**
  * Add the correct margin in IE 8.
  */
-figure {
-  margin: 1em 40px;
-}
-
-/**
+  /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
-}
-
-/**
+  /**
  * Add the correct display in IE.
  */
-main {
-  display: block;
-}
-
-/**
+  /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-pre, code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/* Links
+  /* Links
    ========================================================================== */
-/**
+  /**
  * 1. Remove the gray background on active links in IE 10.
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
-a {
-  background-color: transparent;
-  /* 1 */
-  -webkit-text-decoration-skip: objects;
-  /* 2 */
-}
-
-/**
+  /**
  * Remove the outline on focused links when they are also active or hovered
  * in all browsers (opinionated).
  */
-a:active,
-a:hover {
-  outline-width: 0;
-}
-
-/* Text-level semantics
+  /* Text-level semantics
    ========================================================================== */
-/**
+  /**
  * 1. Remove the bottom border in Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
-}
-
-/**
+  /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
-b,
-strong {
-  font-weight: inherit;
-}
-
-/**
+  /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
+  /**
  * Add the correct font style in Android 4.3-.
  */
-dfn {
-  font-style: italic;
-}
-
-/**
+  /**
  * Add the correct background and color in IE 9-.
  */
-mark {
-  background-color: #ff0;
-  color: #000;
-}
-
-/**
+  /**
  * Add the correct font size in all browsers.
  */
-small {
-  font-size: 80%;
-}
-
-/**
+  /**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
+  /* Embedded content
    ========================================================================== */
-/**
+  /**
  * Add the correct display in IE 9-.
  */
-audio,
-video {
-  display: inline-block;
-}
-
-/**
+  /**
  * Add the correct display in iOS 4-7.
  */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
+  /**
  * Remove the border on images inside links in IE 10-.
  */
-img {
-  border-style: none;
-}
-
-/**
+  /**
  * Hide the overflow in IE.
  */
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* Forms
+  /* Forms
    ========================================================================== */
-/**
+  /**
  * Known issues:
  * - `select`:
  *   By default, Chrome on OS X and Safari on OS X allow very limited styling of
@@ -259,445 +118,81 @@ svg:not(:root) {
  *   `<input>` elements if you use `opacity` less than `1` due to a
  *   [bug](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/3901363/).
  */
-/**
+  /**
  * 1. Change the font styles in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
-button,
-input,
-optgroup,
-select,
-textarea {
-  line-height: 1.15;
-  /* 1 */
-  font-family: sans-serif;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-}
-
-/**
+  /**
  * Show the overflow in IE.
  */
-button {
-  overflow: visible;
-}
-
-/**
+  /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-button,
-select {
-  /* 1 */
-  text-transform: none;
-}
-
-/**
+  /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
  *    controls in Android 4.
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-}
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
   /**
-   * Remove the inner border and padding in Firefox.
-   */
-  /**
-   * Restore the focus styles unset by the previous rule.
-   */
-}
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
  * Show the overflow in Edge.
  */
-input {
-  overflow: visible;
-}
-
-/**
+  /**
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
+  /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
+  /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
   /**
-   * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
-   */
-}
-
-[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/**
+  /**
  * Change the border, margin, and padding in all browsers (opinionated).
  */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-/**
+  /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  color: inherit;
-  /* 2 */
-  white-space: normal;
-  /* 1 */
-}
-
-/**
+  /**
  * 1. Add the correct display in IE 9-.
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-progress {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
-}
-
-/**
+  /**
  * Remove the default vertical scrollbar in IE.
  */
-textarea {
-  overflow: auto;
-}
-
-/* Interactive
+  /* Interactive
    ========================================================================== */
-/*
+  /*
  * Add the correct display in Edge, IE, and Firefox.
  */
-details {
-  display: block;
-}
-
-/*
+  /*
  * Add the correct display in all browsers.
  */
-summary {
-  display: list-item;
-}
-
-/*
+  /*
  * Add the correct display in IE 9-.
  */
-menu {
-  display: block;
-}
-
-/* Scripting
+  /* Scripting
    ========================================================================== */
-/**
+  /**
  * Add the correct display in IE 9-.
  */
-canvas {
-  display: inline-block;
-}
-
-/**
+  /**
  * Add the correct display in IE.
  */
-template {
-  display: none;
-}
-
-/* Hidden
+  /* Hidden
    ========================================================================== */
-/**
+  /**
  * Add the correct display in IE 10-.
  */
-[hidden] {
-  display: none;
-}
-
-@font-face {
-  font-family: 'TheSans';
-  font-weight: 200;
-  font-style: normal;
-  src: url("../fonts/TheSans/TheSansB_200_.eot") format("eot"), url("../fonts/TheSans/TheSansB_200_.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_200_.woff") format("woff"), url("../fonts/TheSans/TheSansB_200_.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_200_.svg#TheSansB_200_") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSans';
-  font-weight: 300;
-  font-style: normal;
-  src: url("../fonts/TheSans/TheSansB_300_.eot") format("eot"), url("../fonts/TheSans/TheSansB_300_.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_300_.woff") format("woff"), url("../fonts/TheSans/TheSansB_300_.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_300_.svg#TheSansB_300_") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSans';
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/TheSans/TheSansB_400_.eot") format("eot"), url("../fonts/TheSans/TheSansB_400_.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_400_.woff") format("woff"), url("../fonts/TheSans/TheSansB_400_.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_400_.svg#TheSansB_400_") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSans';
-  font-weight: 500;
-  font-style: normal;
-  src: url("../fonts/TheSans/TheSansB_500_.eot") format("eot"), url("../fonts/TheSans/TheSansB_500_.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_500_.woff") format("woff"), url("../fonts/TheSans/TheSansB_500_.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_500_.svg#TheSansB_500_") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSans';
-  font-weight: 600;
-  font-style: normal;
-  src: url("../fonts/TheSans/TheSansB_600_.eot") format("eot"), url("../fonts/TheSans/TheSansB_600_.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_600_.woff") format("woff"), url("../fonts/TheSans/TheSansB_600_.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_600_.svg#TheSansB_600_") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSans';
-  font-weight: 700;
-  font-style: normal;
-  src: url("../fonts/TheSans/TheSansB_700_.eot") format("eot"), url("../fonts/TheSans/TheSansB_700_.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_700_.woff") format("woff"), url("../fonts/TheSans/TheSansB_700_.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_700_.svg#TheSansB_700_") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSans';
-  font-weight: 800;
-  font-style: normal;
-  src: url("../fonts/TheSans/TheSansB_800_.eot") format("eot"), url("../fonts/TheSans/TheSansB_800_.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_800_.woff") format("woff"), url("../fonts/TheSans/TheSansB_800_.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_800_.svg#TheSansB_800_") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSans';
-  font-weight: 900;
-  font-style: normal;
-  src: url("../fonts/TheSans/TheSansB_900_.eot") format("eot"), url("../fonts/TheSans/TheSansB_900_.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_900_.woff") format("woff"), url("../fonts/TheSans/TheSansB_900_.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_900_.svg#TheSansB_900_") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSans';
-  font-weight: 200;
-  font-style: italic;
-  src: url("../fonts/TheSans/TheSansB_200i.eot") format("eot"), url("../fonts/TheSans/TheSansB_200i.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_200i.woff") format("woff"), url("../fonts/TheSans/TheSansB_200i.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_200i.svg#TheSansB_200i") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSans';
-  font-weight: 300;
-  font-style: italic;
-  src: url("../fonts/TheSans/TheSansB_300i.eot") format("eot"), url("../fonts/TheSans/TheSansB_300i.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_300i.woff") format("woff"), url("../fonts/TheSans/TheSansB_300i.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_300i.svg#TheSansB_300i") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSans';
-  font-weight: 400;
-  font-style: italic;
-  src: url("../fonts/TheSans/TheSansB_400i.eot") format("eot"), url("../fonts/TheSans/TheSansB_400i.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_400i.woff") format("woff"), url("../fonts/TheSans/TheSansB_400i.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_400i.svg#TheSansB_400i") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSans';
-  font-weight: 500;
-  font-style: italic;
-  src: url("../fonts/TheSans/TheSansB_500i.eot") format("eot"), url("../fonts/TheSans/TheSansB_500i.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_500i.woff") format("woff"), url("../fonts/TheSans/TheSansB_500i.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_500i.svg#TheSansB_500i") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSans';
-  font-weight: 600;
-  font-style: italic;
-  src: url("../fonts/TheSans/TheSansB_600i.eot") format("eot"), url("../fonts/TheSans/TheSansB_600i.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_600i.woff") format("woff"), url("../fonts/TheSans/TheSansB_600i.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_600i.svg#TheSansB_600i") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSans';
-  font-weight: 700;
-  font-style: italic;
-  src: url("../fonts/TheSans/TheSansB_700i.eot") format("eot"), url("../fonts/TheSans/TheSansB_700i.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_700i.woff") format("woff"), url("../fonts/TheSans/TheSansB_700i.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_700i.svg#TheSansB_700i") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSans';
-  font-weight: 800;
-  font-style: italic;
-  src: url("../fonts/TheSans/TheSansB_800i.eot") format("eot"), url("../fonts/TheSans/TheSansB_800i.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_800i.woff") format("woff"), url("../fonts/TheSans/TheSansB_800i.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_800i.svg#TheSansB_800i") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSans';
-  font-weight: 900;
-  font-style: italic;
-  src: url("../fonts/TheSans/TheSansB_900i.eot") format("eot"), url("../fonts/TheSans/TheSansB_900i.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_900i.woff") format("woff"), url("../fonts/TheSans/TheSansB_900i.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_900i.svg#TheSansB_900i") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSerif';
-  font-weight: 200;
-  font-style: normal;
-  src: url("../fonts/TheSerif/TheSerifB_200_.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_200_.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_200_.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_200_.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_200_.svg#TheSerifB_200_") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSerif';
-  font-weight: 300;
-  font-style: normal;
-  src: url("../fonts/TheSerif/TheSerifB_300_.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_300_.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_300_.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_300_.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_300_.svg#TheSerifB_300_") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSerif';
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/TheSerif/TheSerifB_400_.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_400_.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_400_.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_400_.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_400_.svg#TheSerifB_400_") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSerif';
-  font-weight: 500;
-  font-style: normal;
-  src: url("../fonts/TheSerif/TheSerifB_500_.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_500_.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_500_.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_500_.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_500_.svg#TheSerifB_500_") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSerif';
-  font-weight: 600;
-  font-style: normal;
-  src: url("../fonts/TheSerif/TheSerifB_600_.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_600_.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_600_.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_600_.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_600_.svg#TheSerifB_600_") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSerif';
-  font-weight: 700;
-  font-style: normal;
-  src: url("../fonts/TheSerif/TheSerifB_700_.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_700_.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_700_.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_700_.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_700_.svg#TheSerifB_700_") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSerif';
-  font-weight: 800;
-  font-style: normal;
-  src: url("../fonts/TheSerif/TheSerifB_800_.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_800_.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_800_.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_800_.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_800_.svg#TheSerifB_800_") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSerif';
-  font-weight: 200;
-  font-style: italic;
-  src: url("../fonts/TheSerif/TheSerifB_200i.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_200i.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_200i.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_200i.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_200i.svg#TheSerifB_200i") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSerif';
-  font-weight: 300;
-  font-style: italic;
-  src: url("../fonts/TheSerif/TheSerifB_300i.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_300i.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_300i.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_300i.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_300i.svg#TheSerifB_300i") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSerif';
-  font-weight: 400;
-  font-style: italic;
-  src: url("../fonts/TheSerif/TheSerifB_400i.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_400i.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_400i.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_400i.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_400i.svg#TheSerifB_400i") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSerif';
-  font-weight: 500;
-  font-style: italic;
-  src: url("../fonts/TheSerif/TheSerifB_500i.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_500i.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_500i.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_500i.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_500i.svg#TheSerifB_500i") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSerif';
-  font-weight: 600;
-  font-style: italic;
-  src: url("../fonts/TheSerif/TheSerifB_600i.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_600i.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_600i.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_600i.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_600i.svg#TheSerifB_600i") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSerif';
-  font-weight: 700;
-  font-style: italic;
-  src: url("../fonts/TheSerif/TheSerifB_700i.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_700i.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_700i.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_700i.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_700i.svg#TheSerifB_700i") format("svg");
-}
-
-@font-face {
-  font-family: 'TheSerif';
-  font-weight: 800;
-  font-style: italic;
-  src: url("../fonts/TheSerif/TheSerifB_800i.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_800i.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_800i.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_800i.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_800i.svg#TheSerifB_800i") format("svg");
-}
-
-/*doc
+  /*doc
 ---
 title: Icons
 name: 01-foundation-03-icons
@@ -2907,1054 +2402,98 @@ To flip the icon, use the `icon--flip-horizontal`, `icon--flip-vertical` or `ico
     </p>
   </div>
   
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-242-umbrella icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-242-umbrella<br/>
+      Sass: icon-char('242-umbrella');
+    </p>
+  </div>
+  
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-243-security icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-243-security<br/>
+      Sass: icon-char('243-security');
+    </p>
+  </div>
+  
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-244-routed-network icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-244-routed-network<br/>
+      Sass: icon-char('244-routed-network');
+    </p>
+  </div>
+  
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-245-ip-sets icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-245-ip-sets<br/>
+      Sass: icon-char('245-ip-sets');
+    </p>
+  </div>
+  
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-246-resource-pool icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-246-resource-pool<br/>
+      Sass: icon-char('246-resource-pool');
+    </p>
+  </div>
+  
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-247-edge icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-247-edge<br/>
+      Sass: icon-char('247-edge');
+    </p>
+  </div>
+  
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-248-switch icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-248-switch<br/>
+      Sass: icon-char('248-switch');
+    </p>
+  </div>
+  
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-249-processor icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-249-processor<br/>
+      Sass: icon-char('249-processor');
+    </p>
+  </div>
+  
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-250-distributed-network icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-250-distributed-network<br/>
+      Sass: icon-char('250-distributed-network');
+    </p>
+  </div>
+  
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-251-legacy-network icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-251-legacy-network<br/>
+      Sass: icon-char('251-legacy-network');
+    </p>
+  </div>
+  
 </div>
 */
-@font-face {
-  font-family: 'sdx-icons';
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/sdx-icons/sdx-icons.eot") format("eot"), url("../fonts/sdx-icons/sdx-icons.woff2") format("woff2"), url("../fonts/sdx-icons/sdx-icons.woff") format("woff"), url("../fonts/sdx-icons/sdx-icons.ttf") format("truetype"), url("../fonts/sdx-icons/sdx-icons.svg#sdx-icons") format("svg");
-}
-
-.icon {
-  display: inline-block;
-  text-transform: none;
-  text-decoration: none;
-  text-rendering: auto;
-  line-height: 1;
-  font-family: 'sdx-icons';
-  font-size: inherit;
-  font-weight: normal;
-  font-style: normal;
-  font-variant: normal;
-  font-variant-ligatures: normal;
-  font-variant-caps: normal;
-  font-variant-numeric: normal;
-  font-stretch: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon--s1 {
-  font-size: 16px;
-}
-
-.icon--s2 {
-  font-size: 24px;
-}
-
-.icon--s3 {
-  font-size: 32px;
-}
-
-.icon--s4 {
-  font-size: 40px;
-}
-
-.icon--s5 {
-  font-size: 48px;
-}
-
-.icon--s6 {
-  font-size: 56px;
-}
-
-.icon--flip-horizontal {
-  -webkit-transform: scale(-1, 1);
-  transform: scale(-1, 1);
-}
-
-.icon--flip-vertical {
-  -webkit-transform: scale(1, -1);
-  transform: scale(1, -1);
-}
-
-.icon--flip-horizontal-vertical {
-  -webkit-transform: scale(-1, -1);
-  transform: scale(-1, -1);
-}
-
-.icon--excel {
-  color: #008236;
-}
-
-.icon--powerpoint {
-  color: #e86416;
-}
-
-.icon--word {
-  color: #1781e3;
-}
-
-.icon--pdf {
-  color: #d12;
-}
-
-.icon-001-account::before {
-  content: "";
-}
-
-.icon-002-arrow-down::before {
-  content: "";
-}
-
-.icon-003-arrow-left::before {
-  content: "";
-}
-
-.icon-004-arrow-right::before {
-  content: "";
-}
-
-.icon-005-arrow-up::before {
-  content: "";
-}
-
-.icon-006-attachment::before {
-  content: "";
-}
-
-.icon-007-backup::before {
-  content: "";
-}
-
-.icon-008-bin::before {
-  content: "";
-}
-
-.icon-009-calendar::before {
-  content: "";
-}
-
-.icon-010-cancel::before {
-  content: "";
-}
-
-.icon-011-check-mark::before {
-  content: "";
-}
-
-.icon-012-check-mark-circle::before {
-  content: "";
-}
-
-.icon-013-chevron-down::before {
-  content: "";
-}
-
-.icon-014-chevron-left::before {
-  content: "";
-}
-
-.icon-015-chevron-right::before {
-  content: "";
-}
-
-.icon-016-chevron-up::before {
-  content: "";
-}
-
-.icon-017-chevron-flat-down::before {
-  content: "";
-}
-
-.icon-018-chevron-flat-left::before {
-  content: "";
-}
-
-.icon-019-chevron-flat-right::before {
-  content: "";
-}
-
-.icon-020-chevron-flat-up::before {
-  content: "";
-}
-
-.icon-021-clock::before {
-  content: "";
-}
-
-.icon-022-close::before {
-  content: "";
-}
-
-.icon-023-download::before {
-  content: "";
-}
-
-.icon-024-download-cloud::before {
-  content: "";
-}
-
-.icon-025-edit::before {
-  content: "";
-}
-
-.icon-026-exclamation-mark-circle::before {
-  content: "";
-}
-
-.icon-027-flag::before {
-  content: "";
-}
-
-.icon-028-folder-new::before {
-  content: "";
-}
-
-.icon-029-folder-video::before {
-  content: "";
-}
-
-.icon-030-forward::before {
-  content: "";
-}
-
-.icon-031-forward-filled::before {
-  content: "";
-}
-
-.icon-032-forward-message::before {
-  content: "";
-}
-
-.icon-033-forward-message-2::before {
-  content: "";
-}
-
-.icon-034-fullscreen-enter::before {
-  content: "";
-}
-
-.icon-035-fullscreen-enter-2::before {
-  content: "";
-}
-
-.icon-036-fullscreen-leave::before {
-  content: "";
-}
-
-.icon-037-fullscreen-leave-2::before {
-  content: "";
-}
-
-.icon-038-go-to-end::before {
-  content: "";
-}
-
-.icon-039-go-to-end-filled::before {
-  content: "";
-}
-
-.icon-040-go-to-start::before {
-  content: "";
-}
-
-.icon-041-go-to-start-filled::before {
-  content: "";
-}
-
-.icon-042-group::before {
-  content: "";
-}
-
-.icon-043-heart::before {
-  content: "";
-}
-
-.icon-044-home::before {
-  content: "";
-}
-
-.icon-045-hourglass::before {
-  content: "";
-}
-
-.icon-046-information-circle::before {
-  content: "";
-}
-
-.icon-047-key::before {
-  content: "";
-}
-
-.icon-048-link::before {
-  content: "";
-}
-
-.icon-049-lock::before {
-  content: "";
-}
-
-.icon-050-menu::before {
-  content: "";
-}
-
-.icon-051-message::before {
-  content: "";
-}
-
-.icon-052-minus::before {
-  content: "";
-}
-
-.icon-053-more::before {
-  content: "";
-}
-
-.icon-054-new::before {
-  content: "";
-}
-
-.icon-055-okay::before {
-  content: "";
-}
-
-.icon-056-pause::before {
-  content: "";
-}
-
-.icon-057-pause-filled::before {
-  content: "";
-}
-
-.icon-058-person::before {
-  content: "";
-}
-
-.icon-059-play::before {
-  content: "";
-}
-
-.icon-060-play-filled::before {
-  content: "";
-}
-
-.icon-061-plus::before {
-  content: "";
-}
-
-.icon-062-question-mark-circle::before {
-  content: "";
-}
-
-.icon-063-record::before {
-  content: "";
-}
-
-.icon-064-record-filled::before {
-  content: "";
-}
-
-.icon-065-rename::before {
-  content: "";
-}
-
-.icon-066-replay::before {
-  content: "";
-}
-
-.icon-067-reply-message::before {
-  content: "";
-}
-
-.icon-068-reply-message-2::before {
-  content: "";
-}
-
-.icon-069-reply-message-all::before {
-  content: "";
-}
-
-.icon-070-reply-message-all-2::before {
-  content: "";
-}
-
-.icon-071-retry::before {
-  content: "";
-}
-
-.icon-072-rewind::before {
-  content: "";
-}
-
-.icon-073-rewind-filled::before {
-  content: "";
-}
-
-.icon-074-save::before {
-  content: "";
-}
-
-.icon-075-save-2::before {
-  content: "";
-}
-
-.icon-076-save-3::before {
-  content: "";
-}
-
-.icon-077-search::before {
-  content: "";
-}
-
-.icon-078-settings::before {
-  content: "";
-}
-
-.icon-079-shopping-trolley::before {
-  content: "";
-}
-
-.icon-080-speech-bubble::before {
-  content: "";
-}
-
-.icon-081-standby::before {
-  content: "";
-}
-
-.icon-082-star::before {
-  content: "";
-}
-
-.icon-083-stop::before {
-  content: "";
-}
-
-.icon-084-stop-filled::before {
-  content: "";
-}
-
-.icon-085-synchronise::before {
-  content: "";
-}
-
-.icon-086-thumb-up::before {
-  content: "";
-}
-
-.icon-087-upload::before {
-  content: "";
-}
-
-.icon-088-upload-cloud::before {
-  content: "";
-}
-
-.icon-089-volume-fortissimo::before {
-  content: "";
-}
-
-.icon-090-volume-forte::before {
-  content: "";
-}
-
-.icon-091-volume-piano::before {
-  content: "";
-}
-
-.icon-092-volume-pianissimo::before {
-  content: "";
-}
-
-.icon-093-volume-mute::before {
-  content: "";
-}
-
-.icon-094-warning::before {
-  content: "";
-}
-
-.icon-095-zoom-in::before {
-  content: "";
-}
-
-.icon-096-zoom-out::before {
-  content: "";
-}
-
-.icon-097-suitcase::before {
-  content: "";
-}
-
-.icon-098-ambulance::before {
-  content: "";
-}
-
-.icon-099-ambulance-2::before {
-  content: "";
-}
-
-.icon-100-van::before {
-  content: "";
-}
-
-.icon-101-delivery::before {
-  content: "";
-}
-
-.icon-102-delivery-2::before {
-  content: "";
-}
-
-.icon-103-applications::before {
-  content: "";
-}
-
-.icon-104-assistant::before {
-  content: "";
-}
-
-.icon-105-call-centre::before {
-  content: "";
-}
-
-.icon-106-bill::before {
-  content: "";
-}
-
-.icon-107-child-protection::before {
-  content: "";
-}
-
-.icon-108-coins::before {
-  content: "";
-}
-
-.icon-109-compass::before {
-  content: "";
-}
-
-.icon-110-mobile-phone::before {
-  content: "";
-}
-
-.icon-111-smartphone::before {
-  content: "";
-}
-
-.icon-112-tablet::before {
-  content: "";
-}
-
-.icon-113-laptop::before {
-  content: "";
-}
-
-.icon-114-computer::before {
-  content: "";
-}
-
-.icon-115-workstation::before {
-  content: "";
-}
-
-.icon-116-credit-card::before {
-  content: "";
-}
-
-.icon-117-directory::before {
-  content: "";
-}
-
-.icon-118-document::before {
-  content: "";
-}
-
-.icon-119-document-new::before {
-  content: "";
-}
-
-.icon-120-document-excel::before {
-  content: "";
-}
-
-.icon-121-document-powerpoint::before {
-  content: "";
-}
-
-.icon-122-document-word::before {
-  content: "";
-}
-
-.icon-123-document-pdf::before {
-  content: "";
-}
-
-.icon-124-document-txt::before {
-  content: "";
-}
-
-.icon-125-document-zip::before {
-  content: "";
-}
-
-.icon-126-document-code::before {
-  content: "";
-}
-
-.icon-127-e-mail::before {
-  content: "";
-}
-
-.icon-128-film-camera::before {
-  content: "";
-}
-
-.icon-129-film-camera-2::before {
-  content: "";
-}
-
-.icon-130-film-camera-3::before {
-  content: "";
-}
-
-.icon-131-film-reel::before {
-  content: "";
-}
-
-.icon-132-folder::before {
-  content: "";
-}
-
-.icon-133-football::before {
-  content: "";
-}
-
-.icon-134-game::before {
-  content: "";
-}
-
-.icon-135-gaming::before {
-  content: "";
-}
-
-.icon-136-globe::before {
-  content: "";
-}
-
-.icon-137-handset::before {
-  content: "";
-}
-
-.icon-138-headphone::before {
-  content: "";
-}
-
-.icon-139-headset::before {
-  content: "";
-}
-
-.icon-140-index-card::before {
-  content: "";
-}
-
-.icon-141-leaf::before {
-  content: "";
-}
-
-.icon-142-lifesaver::before {
-  content: "";
-}
-
-.icon-143-modem-wlan::before {
-  content: "";
-}
-
-.icon-144-movie::before {
-  content: "";
-}
-
-.icon-145-movie-2::before {
-  content: "";
-}
-
-.icon-146-movie-3::before {
-  content: "";
-}
-
-.icon-147-svod::before {
-  content: "";
-}
-
-.icon-148-music::before {
-  content: "";
-}
-
-.icon-149-navigation::before {
-  content: "";
-}
-
-.icon-150-network::before {
-  content: "";
-}
-
-.icon-151-office::before {
-  content: "";
-}
-
-.icon-152-phone-basic::before {
-  content: "";
-}
-
-.icon-153-phone-pro::before {
-  content: "";
-}
-
-.icon-154-photo::before {
-  content: "";
-}
-
-.icon-155-photo-camera::before {
-  content: "";
-}
-
-.icon-156-postcard::before {
-  content: "";
-}
-
-.icon-157-printer::before {
-  content: "";
-}
-
-.icon-158-radio::before {
-  content: "";
-}
-
-.icon-159-rss-feed::before {
-  content: "";
-}
-
-.icon-160-wlan::before {
-  content: "";
-}
-
-.icon-161-signal::before {
-  content: "";
-}
-
-.icon-162-server::before {
-  content: "";
-}
-
-.icon-163-sms::before {
-  content: "";
-}
-
-.icon-164-translation::before {
-  content: "";
-}
-
-.icon-165-transmitter::before {
-  content: "";
-}
-
-.icon-166-tv::before {
-  content: "";
-}
-
-.icon-167-tv-hd::before {
-  content: "";
-}
-
-.icon-168-tv-2-0::before {
-  content: "";
-}
-
-.icon-169-video-tape::before {
-  content: "";
-}
-
-.icon-170-video-tape-2::before {
-  content: "";
-}
-
-.icon-171-wearable-watch::before {
-  content: "";
-}
-
-.icon-172-weather-cloud::before {
-  content: "";
-}
-
-.icon-173-weather-rain::before {
-  content: "";
-}
-
-.icon-174-weather-rain-unsettled::before {
-  content: "";
-}
-
-.icon-175-weather-snow::before {
-  content: "";
-}
-
-.icon-176-weather-snow-unsettled::before {
-  content: "";
-}
-
-.icon-177-weather-storm::before {
-  content: "";
-}
-
-.icon-178-weather-storm-unsettled::before {
-  content: "";
-}
-
-.icon-179-weather-sun::before {
-  content: "";
-}
-
-.icon-180-weather-sun-unsettled::before {
-  content: "";
-}
-
-.icon-181-inbox::before {
-  content: "";
-}
-
-.icon-182-drafts::before {
-  content: "";
-}
-
-.icon-183-sent::before {
-  content: "";
-}
-
-.icon-184-sent-2::before {
-  content: "";
-}
-
-.icon-185-inbox::before {
-  content: "";
-}
-
-.icon-186-drafts::before {
-  content: "";
-}
-
-.icon-187-sent::before {
-  content: "";
-}
-
-.icon-188-sent-2::before {
-  content: "";
-}
-
-.icon-189-inbox::before {
-  content: "";
-}
-
-.icon-190-drafts::before {
-  content: "";
-}
-
-.icon-191-sent::before {
-  content: "";
-}
-
-.icon-192-sent-2::before {
-  content: "";
-}
-
-.icon-193-website::before {
-  content: "";
-}
-
-.icon-194-website-2::before {
-  content: "";
-}
-
-.icon-195-heart-filled::before {
-  content: "";
-}
-
-.icon-196-exclamation-mark::before {
-  content: "";
-}
-
-.icon-197-share::before {
-  content: "";
-}
-
-.icon-198-chevron-down-small::before {
-  content: "";
-}
-
-.icon-199-chevron-up-small::before {
-  content: "";
-}
-
-.icon-200-chevron-left-small::before {
-  content: "";
-}
-
-.icon-201-chevron-right-small::before {
-  content: "";
-}
-
-.icon-202-clear-circle::before {
-  content: "";
-}
-
-.icon-203-server::before {
-  content: "";
-}
-
-.icon-204-cd::before {
-  content: "";
-}
-
-.icon-205-bundle::before {
-  content: "";
-}
-
-.icon-206-database::before {
-  content: "";
-}
-
-.icon-207-firewall::before {
-  content: "";
-}
-
-.icon-208-proxy-server::before {
-  content: "";
-}
-
-.icon-209-settopbox::before {
-  content: "";
-}
-
-.icon-210-puzzle::before {
-  content: "";
-}
-
-.icon-211-skull::before {
-  content: "";
-}
-
-.icon-212-fire::before {
-  content: "";
-}
-
-.icon-213-setting::before {
-  content: "";
-}
-
-.icon-214-present::before {
-  content: "";
-}
-
-.icon-215-certificate::before {
-  content: "";
-}
-
-.icon-216-waypointer::before {
-  content: "";
-}
-
-.icon-217-eye::before {
-  content: "";
-}
-
-.icon-218-eye-shut::before {
-  content: "";
-}
-
-.icon-219-runtime::before {
-  content: "";
-}
-
-.icon-220-list::before {
-  content: "";
-}
-
-.icon-221-topology::before {
-  content: "";
-}
-
-.icon-222-blueprint::before {
-  content: "";
-}
-
-.icon-223-map-pointer::before {
-  content: "";
-}
-
-.icon-224-console::before {
-  content: "";
-}
-
-.icon-225-reboot::before {
-  content: "";
-}
-
-.icon-226-reprovision::before {
-  content: "";
-}
-
-.icon-227-speech-bubble-filled::before {
-  content: "";
-}
-
-.icon-228-star-filled::before {
-  content: "";
-}
-
-.icon-229-gateway::before {
-  content: "";
-}
-
-.icon-230-flash::before {
-  content: "";
-}
-
-.icon-231-rocket::before {
-  content: "";
-}
-
-.icon-232-robot-neutral::before {
-  content: "";
-}
-
-.icon-233-robot-happy::before {
-  content: "";
-}
-
-.icon-234-robot-smile::before {
-  content: "";
-}
-
-.icon-235-robot-laughing::before {
-  content: "";
-}
-
-.icon-236-robot-wink::before {
-  content: "";
-}
-
-.icon-237-robot-relaxed::before {
-  content: "";
-}
-
-.icon-238-robot-surprized::before {
-  content: "";
-}
-
-.icon-239-robot-confused::before {
-  content: "";
-}
-
-.icon-240-robot-sad::before {
-  content: "";
-}
-
-.icon-241-robot-broken::before {
-  content: "";
-}
-
-.sdx-container {
   font-family: "TheSans", sans-serif;
   font-weight: 300;
   line-height: 24px;
@@ -11514,6 +10053,1692 @@ Trunctate text in components.
 ```html_example
 <p class="text-truncate">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
 */
+  /*doc
+---
+title: Visibility
+name: 06-utilities-visibility-01
+category: Utilities - Visibility
+---
+
+### Invisible content
+
+The `.invisible` and `.visible` class can be used to toggle only the visibility of an element, meaning its display is not modified and the element can still affect the flow of the document.
+
+```html_example
+<p class="invisible">not visible</p>
+<p class="visible">visible</p>
+```
+
+### Responsive visibility
+
+For faster mobile-friendly development, use these utility classes for showing and hiding content by device via media query.
+<ul class="list">
+  <li>
+    The `.hidden-*-up` classes hide the element when the viewport is at the given breakpoint or wider. For example, `.hidden-md-up` hides an element on medium, large, and extra-large viewports.
+  </li>
+  <li>
+    The `.hidden-*-down` classes hide the element when the viewport is at the given breakpoint or smaller. For example, `.hidden-md-down` hides an element on extra-small, small, and medium viewports.
+  </li>
+  <li>
+    You can combine one `.hidden-*-up` class with one `.hidden-*-down` class to show an element only on a given interval of screen sizes. For example, `.hidden-sm-down.hidden-xl-up` shows the element only on medium and large viewports. Using multiple `.hidden-*-up` classes or multiple `.hidden-*-down` classes is redundant and pointless.
+  </li>
+</ul>
+
+If you want to go for specific devices (phone, tablet or desktop) use the device specific classes instead of the breakpoint specific classes:
+<ul class="list">
+  <li>
+    Phone: `.hidden-phone-up` or `.hidden-phone-down`
+  </li>
+  <li>
+    Tablet: `.hidden-tablet-up` or `.hidden-tablet-down`
+  </li>
+  <li>
+    Desktop: `.hidden-desktop-up` or `.hidden-desktop-down`
+  </li>
+</ul>
+*/
+}
+
+.sdx-container html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+
+.sdx-container body {
+  margin: 0;
+}
+
+.sdx-container article,
+.sdx-container aside,
+.sdx-container footer,
+.sdx-container header,
+.sdx-container nav,
+.sdx-container section {
+  display: block;
+}
+
+.sdx-container figcaption,
+.sdx-container figure {
+  display: block;
+}
+
+.sdx-container figure {
+  margin: 1em 40px;
+}
+
+.sdx-container hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+.sdx-container main {
+  display: block;
+}
+
+.sdx-container pre, .sdx-container code, .sdx-container kbd, .sdx-container samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+.sdx-container a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+.sdx-container a:active,
+.sdx-container a:hover {
+  outline-width: 0;
+}
+
+.sdx-container abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+.sdx-container b,
+.sdx-container strong {
+  font-weight: inherit;
+}
+
+.sdx-container b,
+.sdx-container strong {
+  font-weight: bolder;
+}
+
+.sdx-container dfn {
+  font-style: italic;
+}
+
+.sdx-container mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+.sdx-container small {
+  font-size: 80%;
+}
+
+.sdx-container sub,
+.sdx-container sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.sdx-container sub {
+  bottom: -0.25em;
+}
+
+.sdx-container sup {
+  top: -0.5em;
+}
+
+.sdx-container audio,
+.sdx-container video {
+  display: inline-block;
+}
+
+.sdx-container audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+.sdx-container img {
+  border-style: none;
+}
+
+.sdx-container svg:not(:root) {
+  overflow: hidden;
+}
+
+.sdx-container button,
+.sdx-container input,
+.sdx-container optgroup,
+.sdx-container select,
+.sdx-container textarea {
+  line-height: 1.15;
+  /* 1 */
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+.sdx-container button {
+  overflow: visible;
+}
+
+.sdx-container button,
+.sdx-container select {
+  /* 1 */
+  text-transform: none;
+}
+
+.sdx-container button,
+.sdx-container html [type="button"],
+.sdx-container [type="reset"],
+.sdx-container [type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+.sdx-container button,
+.sdx-container [type="button"],
+.sdx-container [type="reset"],
+.sdx-container [type="submit"] {
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+}
+
+.sdx-container button::-moz-focus-inner,
+.sdx-container [type="button"]::-moz-focus-inner,
+.sdx-container [type="reset"]::-moz-focus-inner,
+.sdx-container [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.sdx-container button:-moz-focusring,
+.sdx-container [type="button"]:-moz-focusring,
+.sdx-container [type="reset"]:-moz-focusring,
+.sdx-container [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.sdx-container input {
+  overflow: visible;
+}
+
+.sdx-container [type="checkbox"],
+.sdx-container [type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+.sdx-container [type="number"]::-webkit-inner-spin-button,
+.sdx-container [type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.sdx-container [type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+  /**
+   * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+   */
+}
+
+.sdx-container [type="search"]::-webkit-search-cancel-button, .sdx-container [type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.sdx-container ::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+.sdx-container fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+.sdx-container legend {
+  box-sizing: border-box;
+  /* 1 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  color: inherit;
+  /* 2 */
+  white-space: normal;
+  /* 1 */
+}
+
+.sdx-container progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+.sdx-container textarea {
+  overflow: auto;
+}
+
+.sdx-container details {
+  display: block;
+}
+
+.sdx-container summary {
+  display: list-item;
+}
+
+.sdx-container menu {
+  display: block;
+}
+
+.sdx-container canvas {
+  display: inline-block;
+}
+
+.sdx-container template {
+  display: none;
+}
+
+.sdx-container [hidden] {
+  display: none;
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSans';
+    font-weight: 200;
+    font-style: normal;
+    src: url("../fonts/TheSans/TheSansB_200_.eot") format("eot"), url("../fonts/TheSans/TheSansB_200_.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_200_.woff") format("woff"), url("../fonts/TheSans/TheSansB_200_.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_200_.svg#TheSansB_200_") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSans';
+    font-weight: 300;
+    font-style: normal;
+    src: url("../fonts/TheSans/TheSansB_300_.eot") format("eot"), url("../fonts/TheSans/TheSansB_300_.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_300_.woff") format("woff"), url("../fonts/TheSans/TheSansB_300_.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_300_.svg#TheSansB_300_") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSans';
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/TheSans/TheSansB_400_.eot") format("eot"), url("../fonts/TheSans/TheSansB_400_.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_400_.woff") format("woff"), url("../fonts/TheSans/TheSansB_400_.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_400_.svg#TheSansB_400_") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSans';
+    font-weight: 500;
+    font-style: normal;
+    src: url("../fonts/TheSans/TheSansB_500_.eot") format("eot"), url("../fonts/TheSans/TheSansB_500_.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_500_.woff") format("woff"), url("../fonts/TheSans/TheSansB_500_.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_500_.svg#TheSansB_500_") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSans';
+    font-weight: 600;
+    font-style: normal;
+    src: url("../fonts/TheSans/TheSansB_600_.eot") format("eot"), url("../fonts/TheSans/TheSansB_600_.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_600_.woff") format("woff"), url("../fonts/TheSans/TheSansB_600_.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_600_.svg#TheSansB_600_") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSans';
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/TheSans/TheSansB_700_.eot") format("eot"), url("../fonts/TheSans/TheSansB_700_.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_700_.woff") format("woff"), url("../fonts/TheSans/TheSansB_700_.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_700_.svg#TheSansB_700_") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSans';
+    font-weight: 800;
+    font-style: normal;
+    src: url("../fonts/TheSans/TheSansB_800_.eot") format("eot"), url("../fonts/TheSans/TheSansB_800_.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_800_.woff") format("woff"), url("../fonts/TheSans/TheSansB_800_.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_800_.svg#TheSansB_800_") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSans';
+    font-weight: 900;
+    font-style: normal;
+    src: url("../fonts/TheSans/TheSansB_900_.eot") format("eot"), url("../fonts/TheSans/TheSansB_900_.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_900_.woff") format("woff"), url("../fonts/TheSans/TheSansB_900_.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_900_.svg#TheSansB_900_") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSans';
+    font-weight: 200;
+    font-style: italic;
+    src: url("../fonts/TheSans/TheSansB_200i.eot") format("eot"), url("../fonts/TheSans/TheSansB_200i.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_200i.woff") format("woff"), url("../fonts/TheSans/TheSansB_200i.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_200i.svg#TheSansB_200i") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSans';
+    font-weight: 300;
+    font-style: italic;
+    src: url("../fonts/TheSans/TheSansB_300i.eot") format("eot"), url("../fonts/TheSans/TheSansB_300i.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_300i.woff") format("woff"), url("../fonts/TheSans/TheSansB_300i.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_300i.svg#TheSansB_300i") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSans';
+    font-weight: 400;
+    font-style: italic;
+    src: url("../fonts/TheSans/TheSansB_400i.eot") format("eot"), url("../fonts/TheSans/TheSansB_400i.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_400i.woff") format("woff"), url("../fonts/TheSans/TheSansB_400i.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_400i.svg#TheSansB_400i") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSans';
+    font-weight: 500;
+    font-style: italic;
+    src: url("../fonts/TheSans/TheSansB_500i.eot") format("eot"), url("../fonts/TheSans/TheSansB_500i.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_500i.woff") format("woff"), url("../fonts/TheSans/TheSansB_500i.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_500i.svg#TheSansB_500i") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSans';
+    font-weight: 600;
+    font-style: italic;
+    src: url("../fonts/TheSans/TheSansB_600i.eot") format("eot"), url("../fonts/TheSans/TheSansB_600i.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_600i.woff") format("woff"), url("../fonts/TheSans/TheSansB_600i.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_600i.svg#TheSansB_600i") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSans';
+    font-weight: 700;
+    font-style: italic;
+    src: url("../fonts/TheSans/TheSansB_700i.eot") format("eot"), url("../fonts/TheSans/TheSansB_700i.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_700i.woff") format("woff"), url("../fonts/TheSans/TheSansB_700i.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_700i.svg#TheSansB_700i") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSans';
+    font-weight: 800;
+    font-style: italic;
+    src: url("../fonts/TheSans/TheSansB_800i.eot") format("eot"), url("../fonts/TheSans/TheSansB_800i.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_800i.woff") format("woff"), url("../fonts/TheSans/TheSansB_800i.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_800i.svg#TheSansB_800i") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSans';
+    font-weight: 900;
+    font-style: italic;
+    src: url("../fonts/TheSans/TheSansB_900i.eot") format("eot"), url("../fonts/TheSans/TheSansB_900i.woff2") format("woff2"), url("../fonts/TheSans/TheSansB_900i.woff") format("woff"), url("../fonts/TheSans/TheSansB_900i.ttf") format("truetype"), url("../fonts/TheSans/TheSansB_900i.svg#TheSansB_900i") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSerif';
+    font-weight: 200;
+    font-style: normal;
+    src: url("../fonts/TheSerif/TheSerifB_200_.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_200_.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_200_.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_200_.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_200_.svg#TheSerifB_200_") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSerif';
+    font-weight: 300;
+    font-style: normal;
+    src: url("../fonts/TheSerif/TheSerifB_300_.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_300_.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_300_.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_300_.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_300_.svg#TheSerifB_300_") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSerif';
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/TheSerif/TheSerifB_400_.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_400_.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_400_.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_400_.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_400_.svg#TheSerifB_400_") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSerif';
+    font-weight: 500;
+    font-style: normal;
+    src: url("../fonts/TheSerif/TheSerifB_500_.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_500_.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_500_.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_500_.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_500_.svg#TheSerifB_500_") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSerif';
+    font-weight: 600;
+    font-style: normal;
+    src: url("../fonts/TheSerif/TheSerifB_600_.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_600_.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_600_.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_600_.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_600_.svg#TheSerifB_600_") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSerif';
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/TheSerif/TheSerifB_700_.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_700_.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_700_.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_700_.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_700_.svg#TheSerifB_700_") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSerif';
+    font-weight: 800;
+    font-style: normal;
+    src: url("../fonts/TheSerif/TheSerifB_800_.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_800_.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_800_.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_800_.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_800_.svg#TheSerifB_800_") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSerif';
+    font-weight: 200;
+    font-style: italic;
+    src: url("../fonts/TheSerif/TheSerifB_200i.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_200i.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_200i.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_200i.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_200i.svg#TheSerifB_200i") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSerif';
+    font-weight: 300;
+    font-style: italic;
+    src: url("../fonts/TheSerif/TheSerifB_300i.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_300i.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_300i.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_300i.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_300i.svg#TheSerifB_300i") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSerif';
+    font-weight: 400;
+    font-style: italic;
+    src: url("../fonts/TheSerif/TheSerifB_400i.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_400i.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_400i.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_400i.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_400i.svg#TheSerifB_400i") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSerif';
+    font-weight: 500;
+    font-style: italic;
+    src: url("../fonts/TheSerif/TheSerifB_500i.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_500i.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_500i.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_500i.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_500i.svg#TheSerifB_500i") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSerif';
+    font-weight: 600;
+    font-style: italic;
+    src: url("../fonts/TheSerif/TheSerifB_600i.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_600i.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_600i.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_600i.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_600i.svg#TheSerifB_600i") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSerif';
+    font-weight: 700;
+    font-style: italic;
+    src: url("../fonts/TheSerif/TheSerifB_700i.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_700i.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_700i.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_700i.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_700i.svg#TheSerifB_700i") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'TheSerif';
+    font-weight: 800;
+    font-style: italic;
+    src: url("../fonts/TheSerif/TheSerifB_800i.eot") format("eot"), url("../fonts/TheSerif/TheSerifB_800i.woff2") format("woff2"), url("../fonts/TheSerif/TheSerifB_800i.woff") format("woff"), url("../fonts/TheSerif/TheSerifB_800i.ttf") format("truetype"), url("../fonts/TheSerif/TheSerifB_800i.svg#TheSerifB_800i") format("svg");
+  }
+}
+
+@font-face {
+  .sdx-container {
+    font-family: 'sdx-icons';
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/sdx-icons/sdx-icons.eot") format("eot"), url("../fonts/sdx-icons/sdx-icons.woff2") format("woff2"), url("../fonts/sdx-icons/sdx-icons.woff") format("woff"), url("../fonts/sdx-icons/sdx-icons.ttf") format("truetype"), url("../fonts/sdx-icons/sdx-icons.svg#sdx-icons") format("svg");
+  }
+}
+
+.sdx-container .icon {
+  display: inline-block;
+  text-transform: none;
+  text-decoration: none;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: 'sdx-icons';
+  font-size: inherit;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-stretch: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sdx-container .icon--s1 {
+  font-size: 16px;
+}
+
+.sdx-container .icon--s2 {
+  font-size: 24px;
+}
+
+.sdx-container .icon--s3 {
+  font-size: 32px;
+}
+
+.sdx-container .icon--s4 {
+  font-size: 40px;
+}
+
+.sdx-container .icon--s5 {
+  font-size: 48px;
+}
+
+.sdx-container .icon--s6 {
+  font-size: 56px;
+}
+
+.sdx-container .icon--flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.sdx-container .icon--flip-vertical {
+  -webkit-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+.sdx-container .icon--flip-horizontal-vertical {
+  -webkit-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+}
+
+.sdx-container .icon--excel {
+  color: #008236;
+}
+
+.sdx-container .icon--powerpoint {
+  color: #e86416;
+}
+
+.sdx-container .icon--word {
+  color: #1781e3;
+}
+
+.sdx-container .icon--pdf {
+  color: #d12;
+}
+
+.sdx-container .icon-001-account::before {
+  content: "";
+}
+
+.sdx-container .icon-002-arrow-down::before {
+  content: "";
+}
+
+.sdx-container .icon-003-arrow-left::before {
+  content: "";
+}
+
+.sdx-container .icon-004-arrow-right::before {
+  content: "";
+}
+
+.sdx-container .icon-005-arrow-up::before {
+  content: "";
+}
+
+.sdx-container .icon-006-attachment::before {
+  content: "";
+}
+
+.sdx-container .icon-007-backup::before {
+  content: "";
+}
+
+.sdx-container .icon-008-bin::before {
+  content: "";
+}
+
+.sdx-container .icon-009-calendar::before {
+  content: "";
+}
+
+.sdx-container .icon-010-cancel::before {
+  content: "";
+}
+
+.sdx-container .icon-011-check-mark::before {
+  content: "";
+}
+
+.sdx-container .icon-012-check-mark-circle::before {
+  content: "";
+}
+
+.sdx-container .icon-013-chevron-down::before {
+  content: "";
+}
+
+.sdx-container .icon-014-chevron-left::before {
+  content: "";
+}
+
+.sdx-container .icon-015-chevron-right::before {
+  content: "";
+}
+
+.sdx-container .icon-016-chevron-up::before {
+  content: "";
+}
+
+.sdx-container .icon-017-chevron-flat-down::before {
+  content: "";
+}
+
+.sdx-container .icon-018-chevron-flat-left::before {
+  content: "";
+}
+
+.sdx-container .icon-019-chevron-flat-right::before {
+  content: "";
+}
+
+.sdx-container .icon-020-chevron-flat-up::before {
+  content: "";
+}
+
+.sdx-container .icon-021-clock::before {
+  content: "";
+}
+
+.sdx-container .icon-022-close::before {
+  content: "";
+}
+
+.sdx-container .icon-023-download::before {
+  content: "";
+}
+
+.sdx-container .icon-024-download-cloud::before {
+  content: "";
+}
+
+.sdx-container .icon-025-edit::before {
+  content: "";
+}
+
+.sdx-container .icon-026-exclamation-mark-circle::before {
+  content: "";
+}
+
+.sdx-container .icon-027-flag::before {
+  content: "";
+}
+
+.sdx-container .icon-028-folder-new::before {
+  content: "";
+}
+
+.sdx-container .icon-029-folder-video::before {
+  content: "";
+}
+
+.sdx-container .icon-030-forward::before {
+  content: "";
+}
+
+.sdx-container .icon-031-forward-filled::before {
+  content: "";
+}
+
+.sdx-container .icon-032-forward-message::before {
+  content: "";
+}
+
+.sdx-container .icon-033-forward-message-2::before {
+  content: "";
+}
+
+.sdx-container .icon-034-fullscreen-enter::before {
+  content: "";
+}
+
+.sdx-container .icon-035-fullscreen-enter-2::before {
+  content: "";
+}
+
+.sdx-container .icon-036-fullscreen-leave::before {
+  content: "";
+}
+
+.sdx-container .icon-037-fullscreen-leave-2::before {
+  content: "";
+}
+
+.sdx-container .icon-038-go-to-end::before {
+  content: "";
+}
+
+.sdx-container .icon-039-go-to-end-filled::before {
+  content: "";
+}
+
+.sdx-container .icon-040-go-to-start::before {
+  content: "";
+}
+
+.sdx-container .icon-041-go-to-start-filled::before {
+  content: "";
+}
+
+.sdx-container .icon-042-group::before {
+  content: "";
+}
+
+.sdx-container .icon-043-heart::before {
+  content: "";
+}
+
+.sdx-container .icon-044-home::before {
+  content: "";
+}
+
+.sdx-container .icon-045-hourglass::before {
+  content: "";
+}
+
+.sdx-container .icon-046-information-circle::before {
+  content: "";
+}
+
+.sdx-container .icon-047-key::before {
+  content: "";
+}
+
+.sdx-container .icon-048-link::before {
+  content: "";
+}
+
+.sdx-container .icon-049-lock::before {
+  content: "";
+}
+
+.sdx-container .icon-050-menu::before {
+  content: "";
+}
+
+.sdx-container .icon-051-message::before {
+  content: "";
+}
+
+.sdx-container .icon-052-minus::before {
+  content: "";
+}
+
+.sdx-container .icon-053-more::before {
+  content: "";
+}
+
+.sdx-container .icon-054-new::before {
+  content: "";
+}
+
+.sdx-container .icon-055-okay::before {
+  content: "";
+}
+
+.sdx-container .icon-056-pause::before {
+  content: "";
+}
+
+.sdx-container .icon-057-pause-filled::before {
+  content: "";
+}
+
+.sdx-container .icon-058-person::before {
+  content: "";
+}
+
+.sdx-container .icon-059-play::before {
+  content: "";
+}
+
+.sdx-container .icon-060-play-filled::before {
+  content: "";
+}
+
+.sdx-container .icon-061-plus::before {
+  content: "";
+}
+
+.sdx-container .icon-062-question-mark-circle::before {
+  content: "";
+}
+
+.sdx-container .icon-063-record::before {
+  content: "";
+}
+
+.sdx-container .icon-064-record-filled::before {
+  content: "";
+}
+
+.sdx-container .icon-065-rename::before {
+  content: "";
+}
+
+.sdx-container .icon-066-replay::before {
+  content: "";
+}
+
+.sdx-container .icon-067-reply-message::before {
+  content: "";
+}
+
+.sdx-container .icon-068-reply-message-2::before {
+  content: "";
+}
+
+.sdx-container .icon-069-reply-message-all::before {
+  content: "";
+}
+
+.sdx-container .icon-070-reply-message-all-2::before {
+  content: "";
+}
+
+.sdx-container .icon-071-retry::before {
+  content: "";
+}
+
+.sdx-container .icon-072-rewind::before {
+  content: "";
+}
+
+.sdx-container .icon-073-rewind-filled::before {
+  content: "";
+}
+
+.sdx-container .icon-074-save::before {
+  content: "";
+}
+
+.sdx-container .icon-075-save-2::before {
+  content: "";
+}
+
+.sdx-container .icon-076-save-3::before {
+  content: "";
+}
+
+.sdx-container .icon-077-search::before {
+  content: "";
+}
+
+.sdx-container .icon-078-settings::before {
+  content: "";
+}
+
+.sdx-container .icon-079-shopping-trolley::before {
+  content: "";
+}
+
+.sdx-container .icon-080-speech-bubble::before {
+  content: "";
+}
+
+.sdx-container .icon-081-standby::before {
+  content: "";
+}
+
+.sdx-container .icon-082-star::before {
+  content: "";
+}
+
+.sdx-container .icon-083-stop::before {
+  content: "";
+}
+
+.sdx-container .icon-084-stop-filled::before {
+  content: "";
+}
+
+.sdx-container .icon-085-synchronise::before {
+  content: "";
+}
+
+.sdx-container .icon-086-thumb-up::before {
+  content: "";
+}
+
+.sdx-container .icon-087-upload::before {
+  content: "";
+}
+
+.sdx-container .icon-088-upload-cloud::before {
+  content: "";
+}
+
+.sdx-container .icon-089-volume-fortissimo::before {
+  content: "";
+}
+
+.sdx-container .icon-090-volume-forte::before {
+  content: "";
+}
+
+.sdx-container .icon-091-volume-piano::before {
+  content: "";
+}
+
+.sdx-container .icon-092-volume-pianissimo::before {
+  content: "";
+}
+
+.sdx-container .icon-093-volume-mute::before {
+  content: "";
+}
+
+.sdx-container .icon-094-warning::before {
+  content: "";
+}
+
+.sdx-container .icon-095-zoom-in::before {
+  content: "";
+}
+
+.sdx-container .icon-096-zoom-out::before {
+  content: "";
+}
+
+.sdx-container .icon-097-suitcase::before {
+  content: "";
+}
+
+.sdx-container .icon-098-ambulance::before {
+  content: "";
+}
+
+.sdx-container .icon-099-ambulance-2::before {
+  content: "";
+}
+
+.sdx-container .icon-100-van::before {
+  content: "";
+}
+
+.sdx-container .icon-101-delivery::before {
+  content: "";
+}
+
+.sdx-container .icon-102-delivery-2::before {
+  content: "";
+}
+
+.sdx-container .icon-103-applications::before {
+  content: "";
+}
+
+.sdx-container .icon-104-assistant::before {
+  content: "";
+}
+
+.sdx-container .icon-105-call-centre::before {
+  content: "";
+}
+
+.sdx-container .icon-106-bill::before {
+  content: "";
+}
+
+.sdx-container .icon-107-child-protection::before {
+  content: "";
+}
+
+.sdx-container .icon-108-coins::before {
+  content: "";
+}
+
+.sdx-container .icon-109-compass::before {
+  content: "";
+}
+
+.sdx-container .icon-110-mobile-phone::before {
+  content: "";
+}
+
+.sdx-container .icon-111-smartphone::before {
+  content: "";
+}
+
+.sdx-container .icon-112-tablet::before {
+  content: "";
+}
+
+.sdx-container .icon-113-laptop::before {
+  content: "";
+}
+
+.sdx-container .icon-114-computer::before {
+  content: "";
+}
+
+.sdx-container .icon-115-workstation::before {
+  content: "";
+}
+
+.sdx-container .icon-116-credit-card::before {
+  content: "";
+}
+
+.sdx-container .icon-117-directory::before {
+  content: "";
+}
+
+.sdx-container .icon-118-document::before {
+  content: "";
+}
+
+.sdx-container .icon-119-document-new::before {
+  content: "";
+}
+
+.sdx-container .icon-120-document-excel::before {
+  content: "";
+}
+
+.sdx-container .icon-121-document-powerpoint::before {
+  content: "";
+}
+
+.sdx-container .icon-122-document-word::before {
+  content: "";
+}
+
+.sdx-container .icon-123-document-pdf::before {
+  content: "";
+}
+
+.sdx-container .icon-124-document-txt::before {
+  content: "";
+}
+
+.sdx-container .icon-125-document-zip::before {
+  content: "";
+}
+
+.sdx-container .icon-126-document-code::before {
+  content: "";
+}
+
+.sdx-container .icon-127-e-mail::before {
+  content: "";
+}
+
+.sdx-container .icon-128-film-camera::before {
+  content: "";
+}
+
+.sdx-container .icon-129-film-camera-2::before {
+  content: "";
+}
+
+.sdx-container .icon-130-film-camera-3::before {
+  content: "";
+}
+
+.sdx-container .icon-131-film-reel::before {
+  content: "";
+}
+
+.sdx-container .icon-132-folder::before {
+  content: "";
+}
+
+.sdx-container .icon-133-football::before {
+  content: "";
+}
+
+.sdx-container .icon-134-game::before {
+  content: "";
+}
+
+.sdx-container .icon-135-gaming::before {
+  content: "";
+}
+
+.sdx-container .icon-136-globe::before {
+  content: "";
+}
+
+.sdx-container .icon-137-handset::before {
+  content: "";
+}
+
+.sdx-container .icon-138-headphone::before {
+  content: "";
+}
+
+.sdx-container .icon-139-headset::before {
+  content: "";
+}
+
+.sdx-container .icon-140-index-card::before {
+  content: "";
+}
+
+.sdx-container .icon-141-leaf::before {
+  content: "";
+}
+
+.sdx-container .icon-142-lifesaver::before {
+  content: "";
+}
+
+.sdx-container .icon-143-modem-wlan::before {
+  content: "";
+}
+
+.sdx-container .icon-144-movie::before {
+  content: "";
+}
+
+.sdx-container .icon-145-movie-2::before {
+  content: "";
+}
+
+.sdx-container .icon-146-movie-3::before {
+  content: "";
+}
+
+.sdx-container .icon-147-svod::before {
+  content: "";
+}
+
+.sdx-container .icon-148-music::before {
+  content: "";
+}
+
+.sdx-container .icon-149-navigation::before {
+  content: "";
+}
+
+.sdx-container .icon-150-network::before {
+  content: "";
+}
+
+.sdx-container .icon-151-office::before {
+  content: "";
+}
+
+.sdx-container .icon-152-phone-basic::before {
+  content: "";
+}
+
+.sdx-container .icon-153-phone-pro::before {
+  content: "";
+}
+
+.sdx-container .icon-154-photo::before {
+  content: "";
+}
+
+.sdx-container .icon-155-photo-camera::before {
+  content: "";
+}
+
+.sdx-container .icon-156-postcard::before {
+  content: "";
+}
+
+.sdx-container .icon-157-printer::before {
+  content: "";
+}
+
+.sdx-container .icon-158-radio::before {
+  content: "";
+}
+
+.sdx-container .icon-159-rss-feed::before {
+  content: "";
+}
+
+.sdx-container .icon-160-wlan::before {
+  content: "";
+}
+
+.sdx-container .icon-161-signal::before {
+  content: "";
+}
+
+.sdx-container .icon-162-server::before {
+  content: "";
+}
+
+.sdx-container .icon-163-sms::before {
+  content: "";
+}
+
+.sdx-container .icon-164-translation::before {
+  content: "";
+}
+
+.sdx-container .icon-165-transmitter::before {
+  content: "";
+}
+
+.sdx-container .icon-166-tv::before {
+  content: "";
+}
+
+.sdx-container .icon-167-tv-hd::before {
+  content: "";
+}
+
+.sdx-container .icon-168-tv-2-0::before {
+  content: "";
+}
+
+.sdx-container .icon-169-video-tape::before {
+  content: "";
+}
+
+.sdx-container .icon-170-video-tape-2::before {
+  content: "";
+}
+
+.sdx-container .icon-171-wearable-watch::before {
+  content: "";
+}
+
+.sdx-container .icon-172-weather-cloud::before {
+  content: "";
+}
+
+.sdx-container .icon-173-weather-rain::before {
+  content: "";
+}
+
+.sdx-container .icon-174-weather-rain-unsettled::before {
+  content: "";
+}
+
+.sdx-container .icon-175-weather-snow::before {
+  content: "";
+}
+
+.sdx-container .icon-176-weather-snow-unsettled::before {
+  content: "";
+}
+
+.sdx-container .icon-177-weather-storm::before {
+  content: "";
+}
+
+.sdx-container .icon-178-weather-storm-unsettled::before {
+  content: "";
+}
+
+.sdx-container .icon-179-weather-sun::before {
+  content: "";
+}
+
+.sdx-container .icon-180-weather-sun-unsettled::before {
+  content: "";
+}
+
+.sdx-container .icon-181-inbox::before {
+  content: "";
+}
+
+.sdx-container .icon-182-drafts::before {
+  content: "";
+}
+
+.sdx-container .icon-183-sent::before {
+  content: "";
+}
+
+.sdx-container .icon-184-sent-2::before {
+  content: "";
+}
+
+.sdx-container .icon-185-inbox::before {
+  content: "";
+}
+
+.sdx-container .icon-186-drafts::before {
+  content: "";
+}
+
+.sdx-container .icon-187-sent::before {
+  content: "";
+}
+
+.sdx-container .icon-188-sent-2::before {
+  content: "";
+}
+
+.sdx-container .icon-189-inbox::before {
+  content: "";
+}
+
+.sdx-container .icon-190-drafts::before {
+  content: "";
+}
+
+.sdx-container .icon-191-sent::before {
+  content: "";
+}
+
+.sdx-container .icon-192-sent-2::before {
+  content: "";
+}
+
+.sdx-container .icon-193-website::before {
+  content: "";
+}
+
+.sdx-container .icon-194-website-2::before {
+  content: "";
+}
+
+.sdx-container .icon-195-heart-filled::before {
+  content: "";
+}
+
+.sdx-container .icon-196-exclamation-mark::before {
+  content: "";
+}
+
+.sdx-container .icon-197-share::before {
+  content: "";
+}
+
+.sdx-container .icon-198-chevron-down-small::before {
+  content: "";
+}
+
+.sdx-container .icon-199-chevron-up-small::before {
+  content: "";
+}
+
+.sdx-container .icon-200-chevron-left-small::before {
+  content: "";
+}
+
+.sdx-container .icon-201-chevron-right-small::before {
+  content: "";
+}
+
+.sdx-container .icon-202-clear-circle::before {
+  content: "";
+}
+
+.sdx-container .icon-203-server::before {
+  content: "";
+}
+
+.sdx-container .icon-204-cd::before {
+  content: "";
+}
+
+.sdx-container .icon-205-bundle::before {
+  content: "";
+}
+
+.sdx-container .icon-206-database::before {
+  content: "";
+}
+
+.sdx-container .icon-207-firewall::before {
+  content: "";
+}
+
+.sdx-container .icon-208-proxy-server::before {
+  content: "";
+}
+
+.sdx-container .icon-209-settopbox::before {
+  content: "";
+}
+
+.sdx-container .icon-210-puzzle::before {
+  content: "";
+}
+
+.sdx-container .icon-211-skull::before {
+  content: "";
+}
+
+.sdx-container .icon-212-fire::before {
+  content: "";
+}
+
+.sdx-container .icon-213-setting::before {
+  content: "";
+}
+
+.sdx-container .icon-214-present::before {
+  content: "";
+}
+
+.sdx-container .icon-215-certificate::before {
+  content: "";
+}
+
+.sdx-container .icon-216-waypointer::before {
+  content: "";
+}
+
+.sdx-container .icon-217-eye::before {
+  content: "";
+}
+
+.sdx-container .icon-218-eye-shut::before {
+  content: "";
+}
+
+.sdx-container .icon-219-runtime::before {
+  content: "";
+}
+
+.sdx-container .icon-220-list::before {
+  content: "";
+}
+
+.sdx-container .icon-221-topology::before {
+  content: "";
+}
+
+.sdx-container .icon-222-blueprint::before {
+  content: "";
+}
+
+.sdx-container .icon-223-map-pointer::before {
+  content: "";
+}
+
+.sdx-container .icon-224-console::before {
+  content: "";
+}
+
+.sdx-container .icon-225-reboot::before {
+  content: "";
+}
+
+.sdx-container .icon-226-reprovision::before {
+  content: "";
+}
+
+.sdx-container .icon-227-speech-bubble-filled::before {
+  content: "";
+}
+
+.sdx-container .icon-228-star-filled::before {
+  content: "";
+}
+
+.sdx-container .icon-229-gateway::before {
+  content: "";
+}
+
+.sdx-container .icon-230-flash::before {
+  content: "";
+}
+
+.sdx-container .icon-231-rocket::before {
+  content: "";
+}
+
+.sdx-container .icon-232-robot-neutral::before {
+  content: "";
+}
+
+.sdx-container .icon-233-robot-happy::before {
+  content: "";
+}
+
+.sdx-container .icon-234-robot-smile::before {
+  content: "";
+}
+
+.sdx-container .icon-235-robot-laughing::before {
+  content: "";
+}
+
+.sdx-container .icon-236-robot-wink::before {
+  content: "";
+}
+
+.sdx-container .icon-237-robot-relaxed::before {
+  content: "";
+}
+
+.sdx-container .icon-238-robot-surprized::before {
+  content: "";
+}
+
+.sdx-container .icon-239-robot-confused::before {
+  content: "";
+}
+
+.sdx-container .icon-240-robot-sad::before {
+  content: "";
+}
+
+.sdx-container .icon-241-robot-broken::before {
+  content: "";
+}
+
+.sdx-container .icon-242-umbrella::before {
+  content: "";
+}
+
+.sdx-container .icon-243-security::before {
+  content: "";
+}
+
+.sdx-container .icon-244-routed-network::before {
+  content: "";
+}
+
+.sdx-container .icon-245-ip-sets::before {
+  content: "";
+}
+
+.sdx-container .icon-246-resource-pool::before {
+  content: "";
+}
+
+.sdx-container .icon-247-edge::before {
+  content: "";
+}
+
+.sdx-container .icon-248-switch::before {
+  content: "";
+}
+
+.sdx-container .icon-249-processor::before {
+  content: "";
+}
+
+.sdx-container .icon-250-distributed-network::before {
+  content: "";
+}
+
+.sdx-container .icon-251-legacy-network::before {
+  content: "";
 }
 
 .sdx-container html {
@@ -13989,6 +14214,18 @@ Trunctate text in components.
     letter-spacing: 0;
     font-size: 16px;
   }
+}
+
+.sdx-container p a + a,
+.sdx-container p a + a.link,
+.sdx-container p a + button.link,
+.sdx-container p a.link + a,
+.sdx-container p a.link + a.link,
+.sdx-container p a.link + button.link,
+.sdx-container p button.link + a,
+.sdx-container p button.link + a.link,
+.sdx-container p button.link + button.link {
+  margin-left: 0;
 }
 
 .sdx-container .link--dark, .sdx-container .bg--dark a, .sdx-container .bg--dark a.link, .sdx-container .bg--dark button.link {
@@ -26184,6 +26421,10 @@ A responsive test page for the compact footer is available at [samples/footer-fu
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.sdx-container .visible {
+  visibility: visible !important;
 }
 
 .sdx-container .invisible {

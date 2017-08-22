@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-* SDX Library v1.3.1
+* SDX Library v1.3.2
 */
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
@@ -41,15 +41,6 @@ header,
 nav,
 section {
   display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -2907,6 +2898,96 @@ To flip the icon, use the `icon--flip-horizontal`, `icon--flip-vertical` or `ico
     </p>
   </div>
   
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-242-umbrella icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-242-umbrella<br/>
+      Sass: icon-char('242-umbrella');
+    </p>
+  </div>
+  
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-243-security icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-243-security<br/>
+      Sass: icon-char('243-security');
+    </p>
+  </div>
+  
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-244-routed-network icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-244-routed-network<br/>
+      Sass: icon-char('244-routed-network');
+    </p>
+  </div>
+  
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-245-ip-sets icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-245-ip-sets<br/>
+      Sass: icon-char('245-ip-sets');
+    </p>
+  </div>
+  
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-246-resource-pool icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-246-resource-pool<br/>
+      Sass: icon-char('246-resource-pool');
+    </p>
+  </div>
+  
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-247-edge icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-247-edge<br/>
+      Sass: icon-char('247-edge');
+    </p>
+  </div>
+  
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-248-switch icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-248-switch<br/>
+      Sass: icon-char('248-switch');
+    </p>
+  </div>
+  
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-249-processor icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-249-processor<br/>
+      Sass: icon-char('249-processor');
+    </p>
+  </div>
+  
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-250-distributed-network icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-250-distributed-network<br/>
+      Sass: icon-char('250-distributed-network');
+    </p>
+  </div>
+  
+  
+  <div class="col-xs-4 col-sm-3 col-md-2">
+    <i class="icon icon-251-legacy-network icon--s4" aria-hidden="true" style="text-align:center;display:block;"></i>
+    <p class="sg-color-code">
+      CSS: icon-251-legacy-network<br/>
+      Sass: icon-char('251-legacy-network');
+    </p>
+  </div>
+  
 </div>
 */
 @font-face {
@@ -3952,6 +4033,46 @@ To flip the icon, use the `icon--flip-horizontal`, `icon--flip-vertical` or `ico
 
 .icon-241-robot-broken::before {
   content: "";
+}
+
+.icon-242-umbrella::before {
+  content: "";
+}
+
+.icon-243-security::before {
+  content: "";
+}
+
+.icon-244-routed-network::before {
+  content: "";
+}
+
+.icon-245-ip-sets::before {
+  content: "";
+}
+
+.icon-246-resource-pool::before {
+  content: "";
+}
+
+.icon-247-edge::before {
+  content: "";
+}
+
+.icon-248-switch::before {
+  content: "";
+}
+
+.icon-249-processor::before {
+  content: "";
+}
+
+.icon-250-distributed-network::before {
+  content: "";
+}
+
+.icon-251-legacy-network::before {
+  content: "";
 }
 
 /*
@@ -7569,6 +7690,18 @@ p button.link {
     letter-spacing: 0;
     font-size: 16px;
   }
+}
+
+p a + a,
+p a + a.link,
+p a + button.link,
+p a.link + a,
+p a.link + a.link,
+p a.link + button.link,
+p button.link + a,
+p button.link + a.link,
+p button.link + button.link {
+  margin-left: 0;
 }
 
 .link--dark,
@@ -26220,6 +26353,54 @@ Trunctate text in components.
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+/*doc
+---
+title: Visibility
+name: 06-utilities-visibility-01
+category: Utilities - Visibility
+---
+
+### Invisible content
+
+The `.invisible` and `.visible` class can be used to toggle only the visibility of an element, meaning its display is not modified and the element can still affect the flow of the document.
+
+```html_example
+<p class="invisible">not visible</p>
+<p class="visible">visible</p>
+```
+
+### Responsive visibility
+
+For faster mobile-friendly development, use these utility classes for showing and hiding content by device via media query.
+<ul class="list">
+  <li>
+    The `.hidden-*-up` classes hide the element when the viewport is at the given breakpoint or wider. For example, `.hidden-md-up` hides an element on medium, large, and extra-large viewports.
+  </li>
+  <li>
+    The `.hidden-*-down` classes hide the element when the viewport is at the given breakpoint or smaller. For example, `.hidden-md-down` hides an element on extra-small, small, and medium viewports.
+  </li>
+  <li>
+    You can combine one `.hidden-*-up` class with one `.hidden-*-down` class to show an element only on a given interval of screen sizes. For example, `.hidden-sm-down.hidden-xl-up` shows the element only on medium and large viewports. Using multiple `.hidden-*-up` classes or multiple `.hidden-*-down` classes is redundant and pointless.
+  </li>
+</ul>
+
+If you want to go for specific devices (phone, tablet or desktop) use the device specific classes instead of the breakpoint specific classes:
+<ul class="list">
+  <li>
+    Phone: `.hidden-phone-up` or `.hidden-phone-down`
+  </li>
+  <li>
+    Tablet: `.hidden-tablet-up` or `.hidden-tablet-down`
+  </li>
+  <li>
+    Desktop: `.hidden-desktop-up` or `.hidden-desktop-down`
+  </li>
+</ul>
+*/
+.visible {
+  visibility: visible !important;
 }
 
 .invisible {
