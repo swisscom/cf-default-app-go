@@ -2,4 +2,5 @@
 applications:
 - name: default-app-go
   memory: 64M
-  buildpack: go_buildpack
+  buildpacks:
+  - go_buildpack
